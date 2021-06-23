@@ -8,15 +8,20 @@ body {
 
 h1 {
   color: #413a3a;
-  font-size: 6rem;
+  font-size: 5vw;
   text-transform: uppercase;
   letter-spacing: 16px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  padding-right: 50px;
 }
 
 p {
   color: hsl(0, 36%, 70%);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
+  margin-bottom: 50px;
+  padding-right: 50px;
 }
 
 span {
@@ -24,13 +29,37 @@ span {
   font-weight: 300;
 }
 
-img .logo {
+img.bg-pattern {
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), url("bg-pattern-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+img.hero-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: auto;
 }
 
+
+img.logo {
+  margin: 50px 0;
+  height: auto;
+  position: relative;
+  z-index: 999;
+}
+
 input[type=email] {
-  border-radius: 25px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid rgba(244, 232, 234, 255);
   padding: 3%;
   margin-bottom: 15%;
   width: 25vw;
@@ -42,11 +71,6 @@ footer {
 
 .guide {
   border: 1px solid #1d1d1d;
-  padding: 5px;
-}
-
-.logo {
-  margin: 25px 0;
 }
 
 .container>* {
@@ -55,35 +79,27 @@ footer {
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
-.col-right {
-  flex: 0 0 40%;
+.col {
+  position: relative;
 }
 
 .col-left {
-  flex: 1 1 60%;
+}
+.col-right {
+}
+
+.wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-}
-
-.bg-pattern {
-  background-image:linear-gradient(red, yellow), url("images/bg-pattern-desktop.svg");
-  background-color: red;
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-.logo-wrapper {
-  align-self: center;
-  width: 80%;
+  z-index: 999;
 }
 
 .content-wrapper {
   align-self: center;
-  width: 80%;
+  padding-right: 60px;
+  position: relative;
+  width: 60%;
 }
