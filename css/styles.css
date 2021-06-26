@@ -51,7 +51,7 @@ img.hero-img {
 }
 
 img.logo {
-  margin: 8vh 0 12vh;
+  margin: 8vh 0 8vh;
   height: 5vh;
   position: relative;
   z-index: 999;
@@ -93,6 +93,7 @@ footer {
 .container>* {
   box-sizing: border-box;
   margin: 0;
+  height: 100vh;
 }
 
 .row {
@@ -101,6 +102,7 @@ footer {
 
 .col {
   position: relative;
+
 }
 
 .col-left {
@@ -110,6 +112,7 @@ footer {
 .col-right {
   display: flex;
   flex-basis: 40%;
+
 }
 
 .wrapper {
