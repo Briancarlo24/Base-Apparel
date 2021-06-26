@@ -9,14 +9,12 @@ function validate() {
   if (validateEmail(email)) {
     document.getElementById("mail").style.border = "1px solid";
     document.getElementById("mail").style.borderColor = "green";
-    alert(email + " is Valid" + " the color is: " + myBorderColor)
     return true;
   };
   document.getElementById("mail").style.border = "1px solid";
   document.getElementById("mail").style.borderColor = "#f96262";
   document.querySelector(".checker").style.visibility = "visible";
   document.querySelector(".icon").style.visibility = "visible";
-  alert(email + " is Invalid")
   return false;
 };
 
