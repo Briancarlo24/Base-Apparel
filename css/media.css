@@ -1,0 +1,158 @@
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: calc(19px + 1.9vw);
+    margin-bottom: 15px;
+    padding-right: 0%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  .bg-pattern {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)),
+    url("bg-pattern-desktop.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+    z-index: 0;
+  }
+
+  img.logo-mobile {
+    visibility: visible;
+    margin: 25px 0;
+    height: 18px;
+    padding-left: 8%;
+    z-index: 999;
+  }
+
+  img.logo {
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+    z-index: 0;
+  }
+
+  input[type=email] {
+    align-self: center;
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid #D1CBCD;
+    height: 34px;
+    margin-bottom: 10px;
+    width: calc(100% - 15px);
+    z-index: 0;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  i {
+    background-image: url("images/icon-error.svg") no-repeat scroll 7px 7px;
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    visibility: hidden;
+    z-index: 222;
+  }
+
+  .container>* {
+    height: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .col {
+    display: flex;
+    min-width: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .col-left {
+    flex-basis: 100%;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
+
+  .col-right {
+    flex-basis: 100%;
+    min-height: 60vw;
+  }
+
+  .col-last {
+    justify-content: flex-start;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .bg-pattern {
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .wrapper {
+    align-self: center;
+    display: flex;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    width: 100%;
+  }
+
+  .email-wrapper {
+    display: flex;
+    margin-top: 2vh;
+    position: relative;
+    width: 100%;
+  }
+
+  .btn-email {
+    background-color: transparent;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    border: 1px solid hsl(0, 80%, 86%);
+    box-shadow: 0px 12px 30px -10px hsl(0, 36%, 70%, 70%);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 25%;
+    min-width: 55px;
+    height: 39px;
+    z-index: 999;
+  }
+
+  .checker {
+    color: #f96262;
+    font-size: 0.7rem;
+    margin-left: 0;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  .hero-img {
+    background: url("../images/hero-mobile.jpg") repeat 0 0;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    width: 100%;
+  }
+
+}

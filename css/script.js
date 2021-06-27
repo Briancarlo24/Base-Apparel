@@ -8,7 +8,7 @@ function validate() {
   let email = document.getElementById("mail").value;
   if (validateEmail(email)) {
     document.getElementById("mail").style.border = "1px solid";
-    document.getElementById("mail").style.borderColor = "green";
+    document.getElementById("mail").style.borderColor = "#f96262";
     return true;
   };
   document.getElementById("mail").style.border = "1px solid";
