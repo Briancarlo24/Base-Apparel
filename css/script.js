@@ -14,7 +14,7 @@ function validate() {
   document.getElementById("mail").style.border = "1px solid";
   document.getElementById("mail").style.borderColor = "#f96262";
   document.querySelector(".checker").style.visibility = "visible";
-  document.querySelector(".icon").style.visibility = "visible";
+  document.querySelector("i").style.visibility = "visible";
   return false;
 };
 
