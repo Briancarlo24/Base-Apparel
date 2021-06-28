@@ -47,34 +47,74 @@ img.logo-mobile {
   z-index: 0;
 }
 
-input[type=email] {
+#form {
+  padding-right: 5%;
+}
+
+#form input[type=email] {
   align-self: flex-start;
   background: transparent;
   border-radius: 50px;
   border: 1px solid #D1CBCD;
-  height: 60px;
+  height: 54px;
   margin-bottom: 10px;
   padding-left: 25px;
   width: calc(100% - 25px);
   z-index: 0;
 }
 
-input:focus {
+#form input:focus {
   outline: none;
 }
 
-input[type=email]::placeholder {
+#form input[type=email]::placeholder {
   color: #CFB3BC;
 }
 
-input:focus::placeholder {
+#form input:focus::placeholder {
   color: transparent;
+}
+
+#form .btn-email {
+  background-color: transparent;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 50px;
+  border: 1px solid hsl(0, 80%, 86%);
+  box-shadow: 0px 12px 30px -10px hsl(0, 36%, 70%, 70%);
+  cursor: pointer;
+  height: 59px;
+  position: absolute;
+  right: 0;
+  min-width: 80px;
+  margin-right: 5%;
+  width: 22%;
+  z-index: 999;
+}
+
+#form .btn-email:active {
+  background-image: linear-gradient(rgba(248, 204, 205, 255), rgba(248, 204, 205, 255));
+  border-color: rgba(248, 204, 205, 255);
+  box-shadow: 0px 12px 30px -2px hsl(0, 36%, 70%);
+  -webkit-box-shadow: 0px 18px 48px -12px hsl(0, 36%, 70%);
+  -moz-box-shadow: 0px 18px 48px -12px hsl(0, 36%, 70%);
+}
+
+#form .fa-exclamation-circle {
+  color: #f96262;
+}
+
+#form .checker {
+  color: #f96262;
+  font-size: 0.8rem;
+  margin-left: 25px;
+  visibility: hidden;
+  width: 100%;
 }
 
 i {
   background-image: url("images/icon-error.svg") no-repeat scroll 7px 7px;
   position: absolute;
-  top: 23%;
+  top: 16%;
   right: 32%;
   visibility: hidden;
   z-index: 222;
@@ -149,42 +189,8 @@ footer {
 
 .email-wrapper {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
-  width: 100%;
-}
-
-.btn-email {
-  background-color: transparent;
-  background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  border-radius: 50px;
-  border: 1px solid hsl(0, 80%, 86%);
-  box-shadow: 0px 12px 30px -10px hsl(0, 36%, 70%, 70%);
-  cursor: pointer;
-  height: 64px;
-  position: absolute;
-  right: 0;
-  min-width: 80px;
-  width: 22%;
-  z-index: 999;
-}
-
-.btn-email:active {
-  background-image: linear-gradient(rgba(248, 204, 205, 255), rgba(248, 204, 205, 255));
-  border-color: rgba(248, 204, 205, 255);
-  box-shadow: 0px 12px 30px -2px hsl(0, 36%, 70%);
-  -webkit-box-shadow: 0px 18px 48px -12px hsl(0, 36%, 70%);
-  -moz-box-shadow: 0px 18px 48px -12px hsl(0, 36%, 70%);
-}
-
-.fa-exclamation-circle {
-  color: #f96262;
-}
-
-.checker {
-  color: #f96262;
-  font-size: 0.8rem;
-  margin-left: 25px;
-  visibility: hidden;
   width: 100%;
 }
 

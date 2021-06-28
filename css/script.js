@@ -1,4 +1,9 @@
 document.querySelectorAll(".btn-email")[0].addEventListener("click", validate);
+document.querySelector("input").addEventListener("click", errorIcon);
+
+function errorIcon() {
+  document.querySelector("i").style.visibility = "hidden";
+}
 
 // Get the borderColor of the input
 let borderColor = document.getElementById("mail");
@@ -26,6 +31,6 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-function refreshPage(){
-    window.location.reload();
+function refreshPage() {
+  window.location.reload();
 }

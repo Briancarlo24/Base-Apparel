@@ -38,7 +38,7 @@
     z-index: 0;
   }
 
-  input[type=email] {
+  #form input[type=email] {
     align-self: center;
     background: transparent;
     border-radius: 50px;
@@ -49,8 +49,31 @@
     z-index: 0;
   }
 
-  input:focus::placeholder {
+  #form input:focus::placeholder {
     color: transparent;
+  }
+
+  #form .btn-email {
+    background-color: transparent;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 50px;
+    border: 1px solid hsl(0, 80%, 86%);
+    box-shadow: 0px 12px 30px -10px hsl(0, 36%, 70%, 70%);
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 25%;
+    min-width: 55px;
+    height: 39px;
+    z-index: 999;
+  }
+
+  #form .checker {
+    color: #f96262;
+    font-size: 0.7rem;
+    margin-left: 0;
+    visibility: hidden;
+    width: 100%;
   }
 
   i {
@@ -124,28 +147,7 @@
     width: 100%;
   }
 
-  .btn-email {
-    background-color: transparent;
-    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    border-radius: 50px;
-    border: 1px solid hsl(0, 80%, 86%);
-    box-shadow: 0px 12px 30px -10px hsl(0, 36%, 70%, 70%);
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    width: 25%;
-    min-width: 55px;
-    height: 39px;
-    z-index: 999;
-  }
 
-  .checker {
-    color: #f96262;
-    font-size: 0.7rem;
-    margin-left: 0;
-    visibility: hidden;
-    width: 100%;
-  }
 
   .hero-img {
     background: url("../images/hero-mobile.jpg") repeat 0 0;
